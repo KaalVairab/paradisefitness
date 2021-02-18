@@ -1,0 +1,214 @@
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  .section-1 {
+    margin: auto;
+  }
+
+  .locate-header {
+    display: none;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .header {
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  .header div {
+    margin: auto;
+  }
+
+  .navbar .ham {
+    font-size: 36px;
+  }
+  .navbar .ham-open {
+    display: block;
+  }
+  .navbar .ham-close {
+    display: none;
+  }
+  .navbar .nav-links {
+    display: none;
+  }
+
+  .hamburgers {
+    display: block;
+  }
+
+  .mob-nav-links {
+    text-align: center;
+    font-size: 16px;
+    position: fixed;
+    right: 10%;
+    background-color: #000000;
+    z-index: 1;
+  }
+  .mob-nav-links ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+  }
+  .mob-nav-links ul li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ffffff;
+  }
+  .mob-nav-links ul li ul {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .mob-nav-links ul li ul li {
+    padding: 6% 4%;
+  }
+  .mob-nav-links ul li:hover ul {
+    display: block;
+  }
+
+  .logo {
+    width: 75%;
+  }
+
+  .landing {
+    background-position-x: center;
+    text-align: center;
+  }
+  .landing div {
+    width: 100%;
+  }
+  .landing .motive {
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .landing .button-landing {
+    left: 0;
+    right: 0;
+    width: fit-content;
+  }
+
+  .section-2 {
+    display: none;
+  }
+
+  .learn-more {
+    margin-bottom: 4%;
+  }
+
+  .content {
+    padding: 4% 10%;
+  }
+
+  .why-us-content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .plans div {
+    flex-direction: column;
+  }
+  .plans div div:nth-child(odd) {
+    width: 100%;
+  }
+  .plans div div:nth-child(even) {
+    width: 100%;
+  }
+  .plans div div:nth-child(even) div h2 {
+    position: relative;
+  }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .social-share {
+    display: none;
+  }
+
+  .call i {
+    display: none;
+  }
+  .call span {
+    display: none;
+  }
+
+  footer .row {
+    flex-direction: column;
+  }
+  footer .row div {
+    width: 100%;
+  }
+  footer .row .logo .footer-logo {
+    display: none;
+  }
+  footer .row .logo .social {
+    display: block;
+  }
+  footer .row .logo .social ul {
+    list-style: none;
+    margin: auto;
+    padding: 0;
+    display: flex;
+  }
+  footer .row .logo .social ul li {
+    margin: auto;
+  }
+  footer .call i {
+    display: block;
+  }
+  footer .developers {
+    display: none;
+  }
+
+  .testimonials .feedback-img {
+    width: fit-content;
+  }
+
+  .testimonials .slick-carousel {
+    width: 75%;
+  }
+  .testimonials .slick-prev {
+    right: -15%;
+  }
+  .testimonials .slick-next {
+    left: -15%;
+  }
+
+  .plans > div > div > div p {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .navbar-cta a {
+    font-size: 10px;
+  }
+
+  .navbar .ham {
+    font-size: 20px;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .landing .button-landing {
+    font-size: 16px;
+  }
+
+  .landing {
+    background-position-y: inherit;
+    height: 100vh;
+  }
+
+  .section-1 {
+    padding: 15% 0;
+    height: 100vh;
+  }
+
+  .why-us-content {
+    margin: auto;
+  }
+
+  footer .row div {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */

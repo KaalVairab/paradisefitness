@@ -1,0 +1,593 @@
+$backgroundColor:#000000;
+$primaryFont:#ffffff;
+$primaryColor:#ef0e0d;
+$overlay:linear-gradient(0deg, rgba($primaryColor, 0.3), rgba($primaryColor, 0.5));
+
+
+:hover{
+  cursor: pointer;
+}
+
+body{
+  background-color:$backgroundColor ;
+  color: $primaryFont;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+.row{
+  margin: 0;
+}
+
+a{
+  color: $primaryFont;
+  transition: 0.5s;
+}
+a:hover{
+  color: $primaryColor;
+  text-decoration: none;
+}
+
+header{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+    /* animation magic */
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+}
+.shrink {
+  background-color: #000000;
+
+  .logo{
+    width: 25%;
+  }
+
+  .navbar-cta{
+    font-size: 12px;
+    .locate{
+      display: none;
+    }
+  }
+
+  .navbar ul{
+    padding:none;
+  }
+}
+
+section{
+  height: 100%;
+  width: 100%;
+}
+
+video{
+  width: 100%;
+}
+
+
+// UNIVERSAL
+.button{
+  background-color: $primaryColor;
+  width: fit-content;
+  margin: auto;
+  transition: 0.5s;
+  a{
+    color: $primaryFont;
+  }
+}
+
+
+.button:hover{
+  background-color: $backgroundColor;
+  border: 1px solid #ffffff;
+}
+
+
+
+.title{
+  font-family: "Anton";
+  padding: 10% 10% 1% 10%;
+  font-size: 36px;
+}
+
+.content{
+  padding:10%;
+  padding-bottom: 4%;
+  text-align: justify;
+  font-size: 18px;
+
+}
+
+.section-1{
+margin: auto 5%;
+}
+
+.section-2 {
+  width: auto;
+  flex: auto;
+  height: 100%;
+}
+// SOCIAL
+.social-share{
+  position: fixed;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 1;
+
+  ul{
+    list-style: none;
+
+    li{
+      margin: 80% 0;
+
+      a{
+        font-size: 20px;
+        transition: 0.5s;
+      }
+      a:hover{
+        font-size: 26px;
+      }
+  }}
+}
+
+
+// HEADER
+.logo {
+  width: 50%;
+  margin: auto;
+  transition: 0.5s ease-in;
+
+ 
+}
+
+.navbar-cta{
+margin: auto;
+font-size: 14px;
+
+  i{
+    font-size: 28px;
+    color: $primaryColor;
+  }
+
+  a{
+    font-size: 14px;
+  }
+  .locate{
+  }
+
+  .call{
+
+  }
+
+}
+
+.navbar{
+
+  width: 100%;
+
+
+
+.nav-links{
+  display: flex;
+  margin: auto;
+  width: 100%;
+
+  ul{
+    margin: auto;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+
+    li{
+      display: flex;
+      flex-direction: column;
+      border-left: 1px solid #ffffff;
+    margin: auto;
+    font-size: 16px;
+    padding: 2% 4%;
+    transition: all 0.5s;
+    width: fit-content;
+      a{
+
+      }
+
+      ul{
+        flex-direction: column;
+        position: absolute;
+        width: fit-content;
+        display: none;
+        top: 65%;
+        li{
+          margin-left: -10%;
+          border: none;
+          padding: 5%;
+        }
+      }
+    }
+
+    li:hover ul{
+      display: block;
+    }
+    
+  }
+  
+}
+}
+
+.mob-nav-links{
+  display: none;
+}
+
+
+
+.hamburgers{
+  display: none;
+}
+
+// LANDING
+.landing{
+background-image: url('https://static.wixstatic.com/media/913019_fba2297ff5234ee79628b9d546874639~mv2_d_1440_1232_s_2.png/v1/fill/w_980,h_711,al_c,q_90,usm_0.66_1.00_0.01/bg%201.webp');
+background-position-x: 125%;
+background-position-y: center;
+background-repeat: no-repeat;
+height: 90vh;
+
+.motive{
+  font-family: "Anton";
+  font-size: 52px;
+  position: absolute;
+  left: 10%;
+  top: 40%;
+}
+
+.button-landing{
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  padding: 1% 4%;
+  font-size: 20px;
+}
+}
+
+// ABOUT
+.about{
+
+}
+
+.learn-more{
+  padding: 2% 4%;
+}
+
+// WHY US
+.why-us{
+  
+  .title{
+    padding-bottom: 3%;
+  }
+
+}
+
+.why-us-content{
+  margin: auto 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 4%;
+
+  div{
+    border: 1px solid $primaryFont;
+    text-align: center;
+    padding: 10%;
+    font-size: 18px;
+    transition: 0.5s;
+    transition: all 0.5s ease-out;
+    div{
+      border: none;
+      margin: auto;
+      width: 75%;
+
+      img{
+        filter: invert(100%);
+      }
+    }
+  }
+
+  div:hover{
+    background-color: #ef0e0d;
+  }
+
+
+}
+
+
+// TESTIMONIALS
+.testimonials{
+
+  background-image: url('https://images.pexels.com/photos/28080/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  height: 90vh;
+  
+  
+  .slick-carousel{
+    width: 50%;
+    margin: auto;
+    top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+    div{
+      background-color: $backgroundColor;
+      margin: auto;
+      text-align: center;
+  }}
+
+  .slick-arrow{
+    position: absolute;
+    padding: 2% 5%;
+    bottom: 0;
+    transition: 0.5s;
+    top: 0;
+    transform: translateY(50%);
+    height: fit-content;
+  }
+
+  .slick-arrow:hover{
+    background-color: $primaryColor;
+  }
+
+  .slick-prev{
+    right: -25%;
+  }
+
+  .slick-next{
+    left: -25%;
+  }
+
+  .slick-slide{
+    padding: 1%;
+  }
+
+  .feedback-img{
+    width: 50%;
+  }
+}
+
+
+// TEAM
+.team{
+
+}
+
+.team-members{
+  text-align: center;
+  margin: auto 10%;
+
+  div{
+   margin:  5% auto 0% auto;
+   transition: 0.5s;
+  }
+
+  div:hover{
+    filter: grayscale(100%);
+  }
+
+  div:hover .team-name{
+    font-weight: 400;
+  }
+
+  div:hover .team-name-detail>p{
+  bottom: 0;
+  display: block;
+
+  }
+}
+
+.team-name{
+  font-weight: 200;
+}
+
+.team-name-detail{
+  position: relative;
+
+  p{
+    position: absolute;
+    background-color: #000000;
+    margin: 0;
+    padding: 5% 10%;
+    display: none;
+    font-weight: 200;
+    
+    
+  }
+
+  
+}
+
+
+
+// PLANS
+.plan{
+
+}
+
+.plans{
+  margin:auto 10%;
+  text-align: center;
+
+  div{
+    div:nth-child(odd){
+      width: 60%;
+      margin: auto;
+      div{
+        width: 100%;
+    padding: 5%;
+    font-size: 36px;
+    background-repeat: no-repeat;
+  object-fit: cover;
+  h2{
+    margin: none;
+  }
+}
+    }
+  
+    div:nth-child(even){
+      width: 40%;
+      div{
+        width: 100%;
+        padding: 10%;
+        background-size: cover;
+    background-repeat: no-repeat;
+  object-fit: cover;
+  position: relative;
+        h2{
+          position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+        }
+}
+    }
+
+
+    
+  }
+}
+
+.plans>div>div>div{
+  transition: 0.5s;
+  p{
+display: none;
+font-size: 24px;
+}
+}
+
+.plans>div>div>div:hover{
+  filter: grayscale(100%);
+}
+
+.plans>div>div>div:hover p{
+  display:block ;
+}
+
+.plans>div>div>div:hover h2{
+  font-size: 16px;
+}
+
+.gym{
+  background:$overlay, url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
+}
+
+.zumba{
+  background:$overlay, url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
+}
+
+.aerobic{
+  background:$overlay, url('https://images.unsplash.com/photo-1518310952931-b1de897abd40?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=751&q=80');
+}
+
+.cardio{
+  background:$overlay, url('https://images.pexels.com/photos/3768916/pexels-photo-3768916.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+}
+
+.diet-program{
+  background:$overlay, url('https://images.unsplash.com/photo-1523986371872-9d3ba2e2a389?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
+}
+
+.personal-training{
+  background:$overlay, url('https://images.pexels.com/photos/414029/pexels-photo-414029.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+height: 50%;
+}
+
+.exercise-programming{
+  background:$overlay, url('https://images.pexels.com/photos/3340318/pexels-photo-3340318.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+height: 50%;}
+
+
+// PRICING & OPENING HRS
+.pricing{
+  div{
+    width: 100%;
+  }
+
+  .price-detail{
+    .one-month{
+      span{
+      font-size: 16px;
+      width: 100%;
+    }
+
+    .type{
+      width: 15%;
+    }
+
+    .price{
+        
+    }
+  }
+    
+  }
+}
+// FOOTER
+footer{
+
+  text-align: center;
+  .title{
+    padding-bottom: 2%;
+  }
+  .row{
+    margin: auto 10%;
+
+    div{
+      width: 30%;
+      margin: auto;
+
+      i{
+        font-size: 36px;
+      }
+    }
+
+    .logo{
+
+      div{
+        width: 50%;
+        margin: auto;
+      img{
+        border-radius: 50% 25% 50% 25%;
+      }
+
+      }
+
+      .social{
+        display: none;
+      }
+    }
+  }
+}
+
+.footer-bottom{
+  border-top: 1px solid #ffffff;
+    margin: 4% 2% 0% 2%;
+    display: flex;
+    padding: 1%;
+    font-size: 12px;
+
+    div{
+      margin: auto;
+    }
+
+  .company-profile{
+    text-align: right;
+  }
+
+  .developers{
+text-align: left;
+font-family: Ubuntu;
+  }
+}
+
