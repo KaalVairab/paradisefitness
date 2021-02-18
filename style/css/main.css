@@ -89,10 +89,6 @@ video {
   font-size: 18px;
 }
 
-.section-1 {
-  margin: auto 5%;
-}
-
 .section-2 {
   width: auto;
   flex: auto;
@@ -187,7 +183,7 @@ video {
 }
 
 .landing {
-  background-image: url("https://static.wixstatic.com/media/913019_fba2297ff5234ee79628b9d546874639~mv2_d_1440_1232_s_2.png/v1/fill/w_980,h_711,al_c,q_90,usm_0.66_1.00_0.01/bg%201.webp");
+  background-image: url("/img/sujata.jpg");
   background-position-x: 125%;
   background-position-y: center;
   background-repeat: no-repeat;
